@@ -1,15 +1,17 @@
 import React from "react";
 
-const NavBar = ({ totalCounters }) => {
-  console.log("NavBar - rendered");
-
+const NavBar = ({ totalCounters, totalItems }) => {
   return (
     <nav className="navbar navbar-light bg-light">
       <a href="#" className="navbar-brand">
-        Navbar{" "}
+        Categories in Cart{" "}
         <span className="badge badege-pill badge-secondary">
           {totalCounters}
         </span>
+      </a>
+      <a href="#" className="navbar-brand">
+        Items in Cart{" "}
+        <span className="badge badege-pill badge-secondary">{totalItems}</span>
       </a>
     </nav>
   );
